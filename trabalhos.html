@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Cursos</title>
+    <style>
+        body {
+           
+            padding: 0;
+            
+            background-color: black;
+            display: flexbox;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        #particles-js {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        nav {
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            
+        }
+
+        nav ul {
+            list-style:lower-roman;
+            padding: 0;
+        }
+
+       
+
+        .conten {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 300px;
+            margin: 20px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .card-title {
+            margin: 10px 0;
+            font-size: 20px;
+        }
+
+        .card-text {
+            margin: 0 10px 10px;
+            font-size: 16px;
+        }
+
+        .btn {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<nav class="py-2 bg-body-tertiary border-bottom">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center">
+        <!-- Menu de navegação -->
+        <ul class="nav me-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link link-dark px-2 active" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="sobre.html" class="nav-link link-dark px-2">Sobre</a></li>
+            <li class="nav-item"><a href="habilidades.html" class="nav-link link-dark px-2">Skills</a></li>
+            <li class="nav-item"><a href="trabalhos.html" class="nav-link link-dark px-2">Projetos</a></li>
+        </ul>
+
+        <!-- Logotipos no canto direito -->
+        <div class="d-flex align-items-center">
+            <a href="https://api.whatsapp.com/send?phone=46999321327" class="nav-link link-dark px-2">
+                <img src="image/whatsapp.png" alt="WhatsApp" class="icones">
+            </a>
+            <a href="https://github.com/Necker08" class="nav-link link-dark px-2">
+                <img src="image/logotipo-do-github.png" alt="GitHub" class="icones">
+            </a>
+            <a href="https://www.linkedin.com/in/alexandre-necher-3338bb22a/" class="nav-link link-dark px-2">
+                <img src="image/linkedin.png" alt="LinkedIn" class="icones">
+            </a>
+        </div>
+    </div>
+</nav>
+
+<div class="conten">
+    <div class="card">
+        <img src="image/sigge.png" class="card-img-top" alt="Imagem do Projeto 1">
+        <div class="card-body">
+            <h5 class="card-title">Sigge Eventos</h5>
+            <p class="card-text">Projeto web desenvolvido no curso de Sistemas de Informação dentro do IFPR campos Palmas, o projeto está sendo concluído e brevemente será utilizado pela instituição.</p>
+            <a href="https://github.com/Necker08/Sigge-Eventos-" class="btn btn-primary">Saiba mais</a>
+        </div>
+    </div>
+
+    <!-- Adicione mais cartões com a mesma estrutura -->
+
+    <div class="card">
+        <img src="image/bibliotecaJAVA.png" class="card-img-top" alt="Imagem do Projeto 2">
+        <div class="card-body">
+            <h5 class="card-title">Biblioteca</h5>
+            <p class="card-text">Sistema de biblioteca feito em JAVA orientado a objeto, capaz de cadastrar, atualizar e excluir os dados conectado em banco de dados MYSQL.</p>
+            <a href="https://github.com/Necker08/Sigge-Eventos-" class="btn btn-primary">Saiba mais</a>
+        </div>
+    </div>
+
+    <!-- Adicione mais cartões com a mesma estrutura -->
+
+    <div class="card">
+        <img src="image/C_estoqueJAVA.png" class="card-img-top" alt="Imagem do Projeto 3">
+        <div class="card-body">
+            <h5 class="card-title">Controle de Estoque</h5>
+            <p class="card-text">Desenvolvimento em Java com as funcionalidades básicas para gerenciamento de estoque, ligado com MYSQL.</p>
+            <a href="https://github.com/Necker08/Sigge-Eventos-" class="btn btn-primary">Saiba mais</a>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+    particlesJS("particles-js", {
+        particles: {
+            number: { value: 80, density: { enable: true, value_area: 520 } },
+            color: { value: "#ffffff" },
+            shape: {
+                type: "circle",
+                stroke: { width: 0, color: "#000000" },
+                polygon: { nb_sides: 5 },
+            },
+            opacity: {
+                value: 0.2,
+                random: false,
+                anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
+            },
+            size: {
+                value: 5,
+                random: true,
+                anim: { enable: true, speed: 40, size_min: 0.1, sync: false },
+            },
+            line_linked: { enable: true, distance: 180, color: "#ffffff", opacity: 0.4, width: 1 },
+            move: {
+                enable: true,
+                speed: 6,
+                direction: "none",
+                random: false,
+                straight: false,
+                out_mode: "out",
+                bounce: false,
+                attract: { enable: false, rotateX: 600, rotateY: 1200 },
+            },
+        },
+        interactivity: {
+            detect_on: "canvas",
+            events: {
+                onclick: { enable: true, mode: "push" },
+                resize: true,
+            },
+            modes: {
+                grab: { distance: 200, line_linked: { opacity: 1 } },
+                bubble: { distance: 200, size: 20, duration: 2, opacity: 4, speed: 3 },
+                repulse: { distance: 200, duration: 0.4 },
+                push: { particles_nb: 4 },
+                remove: { particles_nb: 2 },
+            },
+        },
+        retina_detect: true,
+    });
+</script>
+</body>
+</html>
